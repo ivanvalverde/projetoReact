@@ -1,0 +1,47 @@
+.header{
+    height: 60px;
+    background-color: #fffbef;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.42);
+    z-index:0;
+}
+
+.header-navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3%;
+    font-size: 26px;
+    font-weight: 700;
+    height: 100%;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.header-item-titulo{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: normal;
+    font-size: 36px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-item-sobre{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-item-contato{
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-item-sobre:hover{
+    color: #f9ae48;
+}
+
+.header-item-contato:hover{
+    color: #f9ae48;
+}
+
+.header-item-titulo:hover{
+    color: #f9ae48;
+}

@@ -7,39 +7,28 @@
   pointer-events: none;
 }
 
-.nomeSite{
-  font-family: 'Bilbo Swash Caps', cursive;
-  font-size: 120px;
-  color: white;
-  font-weight: bold;
-}
-
-.header{
+.pagina-contatos-header{
   grid-area: 'header';
-  background-color: purple;
 }
 
-.main{
+.pagina-contatos-main{
   grid-area: 'main';
-  height: 600px;
-  background-image: url('./img/bg-bons-drinks.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.footer{
+.pagina-contatos-footer{
   grid-area: 'footer';
-  background-color: pink;
 }
 
 
-.grid{
+.pagina-contatos{
   display: grid;
-  gap: 10px;
   grid-template-areas:
   "header"
   "main"
   "footer";
+  background-color: #fffdf8;
+  grid-template-rows: 60px auto 40px;
+  min-height: 100vh;
 }
 
 

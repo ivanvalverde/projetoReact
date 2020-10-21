@@ -1,19 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
-import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
-import Main from './components/Main.jsx';
+import Contatos from './components/contatos/index.js';
+import Header from './components/header/index.js';
+import Footer from './components/footer/index.js';
+import Sobre from './components/sobre/index.js';
+import Principal from './components/principal/index.js';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  BrowserRouter
+} from "react-router-dom";
 
-function App() {
-  
-  return (
-    <div className="App grid">
-      <Header />
-      <Main />
-      <Footer />
-    </div>
-  );
+class App extends Component {
+  render() {
+
+    return (
+      <section className="pagina-contatos">
+
+
+        <BrowserRouter>
+          <Header className="pagina-contatos-header" />
+          <Switch>
+
+            <Route exact path="/sobre">
+              <Sobre className="pagina-contatos-main" />
+            </Route>
+
+            <Route exact path="/">
+              <Principal />
+            </Route>
+
+            <Route exact path='/contatos'>
+              <Contatos className="pagina-contatos-main" />
+            </Route>
+
+          </Switch>
+          <Footer className="pagina-contatos-footer" />
+        </BrowserRouter>
+
+
+      </section>
+    );
+
+  }
 }
 
 export default App;

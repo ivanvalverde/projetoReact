@@ -1,0 +1,40 @@
+.principal{
+    background-image: url('../img/bg-bons-drinks.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.principal-texto{
+    color: white;
+    font-size: 120px;
+    text-align: center;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-weight: 700;
+    margin: 0;
+}
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }

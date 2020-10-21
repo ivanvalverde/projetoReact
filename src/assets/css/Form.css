@@ -1,0 +1,64 @@
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 700;
+    align-self: start;
+}
+
+.form-item-nome{
+    margin: 20px 0;
+}
+
+.form-item-email{
+    margin: 20px 0;
+}
+
+.form-item-mensagem{
+    margin: 20px 0;
+}
+
+.form-div-botao{
+    display: grid;
+    grid-template-areas: 
+    "vazio botao";
+    grid-template-columns: 1fr 1fr;
+}
+
+.form-item-vazio{
+    grid-area: 'vazio';
+}
+
+.form-item-botao{
+    grid-area: 'botao';
+    font-size: 18px;
+    font-weight: 700;
+    color: #fffdf8;
+    background: #5c0511;
+    width: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.form-inputs{
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+    border: 1px solid rgba(92,5,17,.4);
+    display: block;
+}
+
+.form-titulo{
+    font-weight: 700;
+    color: #5c0511;
+    font-size: 28px;
+}
+
+.form-label{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.textarea{
+    height: 120px;
+}
